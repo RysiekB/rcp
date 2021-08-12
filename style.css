@@ -1,0 +1,324 @@
+body
+{
+	background-color: #333333;
+    font-size: 25px;
+    padding: 0px;
+}
+
+
+#glowny
+{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    /* Background pattern from subtlepatterns.com */
+    background-image: url("img/white-waves.png");
+    min-height: 880px;
+    max-height: 880px;
+}
+
+#logo
+{
+    width: 650px;
+    float: right;
+    margin-top: 17px;
+    padding-left: 130px;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+#logo > img
+{
+    margin-right: 0px;
+    float: right;
+}
+
+#uzytk
+{
+	width 200px;
+    color: black;
+	font-size: 24px;
+    float: left;
+    padding-left: 10px;
+}
+
+
+.nav
+{ 
+	width: 1200px;
+	padding: 1px 0px 10px 0px;
+	background-color: #333333;
+	text-align: center;
+}
+
+.stopka
+{ 
+	width: 1200px;
+	padding: 4px 20px 0px 0px;
+	background-color: #333333;
+	text-align: center;
+    color: white;
+    font-size: 16px;
+    min-height: 24px;
+}
+
+.stopka > a
+{
+    color: white;
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+.glowneokno
+{
+    min-height: 705px;
+    max-height: 705px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    padding: 0 0 0 50px;
+    overflow: auto;
+    text-align: center;
+
+}
+
+ol
+{
+	padding: 0;
+	margin: 0;
+    list-style-type: none;
+	font-size: 18px;
+	height: 25px;
+	line-height: 200%;
+	display: inline-block;
+}
+
+ol a
+{
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+}
+
+ol > li
+{
+	float: left;
+	width: 198px;
+	height: 40px;
+    border-right: 1px dashed silver;
+}
+
+ol > li:first-child
+{
+	/*border-left: 1px dashed silver;*/
+}
+
+ol > li:last-child
+{
+	border-right: 1px dashed #333333;
+}
+
+
+
+
+ol > li:hover
+{
+	background-color: silver;
+}
+
+ol > li:hover > a
+{
+	color: #000000;
+}
+
+ol > li > ul
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	height: 40px;
+	display: none;
+}
+
+ol > li:hover > ul
+{
+	display: block;
+}
+
+ol > li > ul > li
+{
+	background-color:#333333;
+	position: relative;
+	z-index: 100;
+    border-top: 1px dashed silver;
+}
+
+ol > li > ul > li:hover
+{
+	background-color: silver;
+}
+
+ol > li > ul > li:hover > a
+{
+	color: #000000;
+}
+
+
+
+
+#container
+{
+	background-color: white;
+	width: 300px;
+    padding: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	-webkit-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
+	-moz-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
+	box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
+}
+
+input[type=text],
+input[type=password]
+{
+	width: 300px;
+	background-color: #efefef;
+	color: #666;
+	border: 2px solid #ddd;
+	border-radius: 5px;
+	font-size: 25px;
+	padding: 10px;
+	box-sizing: border-box;
+	outline: none;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+input[type=text]:focus,
+input[type=password]:focus
+{
+	-webkit-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+	-moz-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+	box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+	border: 2px solid #a5cda5;
+	background-color: #e9f3e9;
+	color: #428c42;
+}
+
+input[type=submit]
+{
+	width: 300px;
+	background-color: #36b03c;
+	font-size:25px;
+	color: white;
+	padding: 15px 10px;
+	margin-top: 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	outline: none;
+}
+
+input[type=submit]:focus
+{
+	-webkit-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+	-moz-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+	box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+}
+
+input[type=submit]:hover
+{
+	background-color: #37b93d;
+}
+
+input::-webkit-input-placeholder
+{
+    color: #999;
+}
+input:focus::-webkit-input-placeholder
+{
+    color: #428C42;
+}
+/* Firefox < 19 */
+input:-moz-placeholder
+{
+    color: #999;
+}
+input:focus:-moz-placeholder
+{
+    color: #428C42;
+}
+/* Firefox > 19 */
+input::-moz-placeholder
+{
+    color: #999;
+}
+input:focus::-moz-placeholder
+{
+    color: #428C42;
+}
+/* Internet Explorer 10 */
+input:-ms-input-placeholder
+{
+    color: #999;
+}
+input:focus:-ms-input-placeholder
+{
+    color: #428C42;
+}
+
+
+.error
+{
+	color:red;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+table
+{
+    margin: 0 auto; 
+    text-align: center;
+}
+
+th
+{
+	/*border: 1px solid black;*/
+    border-bottom: 2px solid black;
+    border-top:  2px solid black;
+    padding: 5px;
+    padding-right: 25px;
+	width: auto;
+    text-align: left;
+    vertical-align: middle;
+}
+
+td
+{
+	border-bottom: 1px solid black;
+	padding: 5px;
+    padding-right: 25px;
+	width: auto;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.obrazekgl
+{
+    text-align: center;
+    vertical-align: middle;
+    background-size: contain;
+    float:inherit;
+    
+}
+
+.obrazekgl > img
+{
+    vertical-align: middle;
+    background-size: contain;
+}
